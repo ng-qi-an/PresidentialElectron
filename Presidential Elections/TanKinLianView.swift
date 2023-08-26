@@ -12,36 +12,41 @@ struct TanKinLianView: View {
     var womenNames = ["Women 1", "Women 2", "Women 3", "Women 4"]
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Nail Nik Nat:")
-                    .padding()
-                    .font(.largeTitle)
-                Spacer()
-            }
-            ZStack {
-                Rectangle()
-                    .frame(width: 400, height: 720)
-                    .offset(y: 32)
-                Image(selectedWoman)
-                    .resizable()
-                    .frame(width: 400, height: 659)
-                Rectangle()
-                    .foregroundColor(.white)
-                    .frame(width: 393, height: 100)
-                    .offset(y: 350)
-                Button {
-                    selectedWoman = womenNames.randomElement() ?? ""
-                    print("Hi!")
-                } label: {
-                    Circle()
-                        .foregroundColor(.gray)
-                        .frame(width: 393, height: 50)
-                        .offset(y: 340)
+        ZStack {
+            Color.white
+            VStack {
+                HStack {
+                    Text("Nail Nik Nat:")
+                        .padding()
+                        .font(.largeTitle)
+                    Spacer()
+                }
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .frame(width: 400, height: 720)
+                        .offset(y: 32)
+                    Image(selectedWoman)
+                        .resizable()
+                        .frame(width: 400, height: 659)
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .frame(width: 393, height: 100)
+                        .offset(y: 350)
+                    Button {
+                        selectedWoman = womenNames.randomElement() ?? ""
+                        print("Hi!")
+                    } label: {
+                        Text("0oo")
+                            .font(.largeTitle)
+                            .foregroundColor(.gray)
+                            .background(.gray)
+                            .
+                    }
                 }
             }
+            .padding()
         }
-        .padding()
     }
 }
 
