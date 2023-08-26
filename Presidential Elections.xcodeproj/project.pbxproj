@@ -16,6 +16,7 @@
 		AF17E4F12A998B8A00E93382 /* Candidate+SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17E4F02A998B8A00E93382 /* Candidate+SampleData.swift */; };
 		AF592DB32A998CCF007C2EA0 /* CandidateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF592DB22A998CCF007C2EA0 /* CandidateDetailView.swift */; };
 		AF592DB52A998D63007C2EA0 /* CandidatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF592DB42A998D63007C2EA0 /* CandidatesManager.swift */; };
+		F2274CB32A99A7B4004837B8 /* CandidatesSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2274CB22A99A7B4004837B8 /* CandidatesSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AF17E4F02A998B8A00E93382 /* Candidate+SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candidate+SampleData.swift"; sourceTree = "<group>"; };
 		AF592DB22A998CCF007C2EA0 /* CandidateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDetailView.swift; sourceTree = "<group>"; };
 		AF592DB42A998D63007C2EA0 /* CandidatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesManager.swift; sourceTree = "<group>"; };
+		F2274CB22A99A7B4004837B8 /* CandidatesSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		AF17E4DF2A998B1000E93382 /* Presidential Elections */ = {
 			isa = PBXGroup;
 			children = (
+				F2274CB22A99A7B4004837B8 /* CandidatesSummaryView.swift */,
 				AF17E4E02A998B1000E93382 /* Presidential_ElectionsApp.swift */,
 				AF17E4E22A998B1000E93382 /* ContentView.swift */,
 				AA94D1AD2A9995350001C034 /* TharmanView.swift */,
@@ -159,6 +162,7 @@
 				AF592DB52A998D63007C2EA0 /* CandidatesManager.swift in Sources */,
 				AF592DB32A998CCF007C2EA0 /* CandidateDetailView.swift in Sources */,
 				AF17E4E12A998B1000E93382 /* Presidential_ElectionsApp.swift in Sources */,
+				F2274CB32A99A7B4004837B8 /* CandidatesSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

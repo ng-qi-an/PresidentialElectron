@@ -10,7 +10,7 @@ import SwiftUI
 struct CandidateDetailView: View {
     
     @Binding var candidate: Candidate
-    
+    @StateObject private var candidateManager = CandidateManager()
     var body: some View {
         Form {
             Section("Name") {
@@ -72,6 +72,6 @@ struct CandidateDetailView: View {
 
 struct CandidateDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CandidateDetailView(candidate: .constant(Candidate(name: "Male AI", age: 50, hobby: "Running for president", race: "AI", spouse: "Female AI", spouseAge: 10, spouseRace: "AI")))
+        CandidateDetailView(candidate: .constant(Candidate(name: "Male AI", picture: "Man", age: 50, hobby: "Running for president", race: "AI", spouse: "Female AI", spouseAge: 10, spouseRace: "AI")))
     }
 }

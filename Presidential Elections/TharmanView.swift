@@ -5,7 +5,7 @@ struct TharmanView: View {
     var body: some View {
         ZStack {
             Color(.lightGray)
-                .opacity(0.3)
+                .opacity(0.0)
                 .ignoresSafeArea(.all)
             
             VStack {
@@ -40,14 +40,14 @@ struct TharmanView: View {
                     .padding()
                     .font(.title2)
                 Slider (value: $lightness, in: 0...1)
-                Text("Opacity of polish: \(lightness)")
-            }
+                Text("Opacity of polish: \(Int(lightness))")
+            }.padding(30)
         }
     }
 }
 
 struct TharmanView_Previews: PreviewProvider {
     static var previews: some View {
-        TharmanView()
+        ContentView()
     }
 }
