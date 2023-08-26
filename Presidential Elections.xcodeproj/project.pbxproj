@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA94D1AE2A9995350001C034 /* TharmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94D1AD2A9995350001C034 /* TharmanView.swift */; };
+		AAAFD63C2A999F44002119AA /* TanKinLianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFD63B2A999F44002119AA /* TanKinLianView.swift */; };
 		AF17E4E12A998B1000E93382 /* Presidential_ElectionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17E4E02A998B1000E93382 /* Presidential_ElectionsApp.swift */; };
 		AF17E4E32A998B1000E93382 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF17E4E22A998B1000E93382 /* ContentView.swift */; };
 		AF17E4E52A998B1200E93382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF17E4E42A998B1200E93382 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		AA94D1AD2A9995350001C034 /* TharmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TharmanView.swift; sourceTree = "<group>"; };
+		AAAFD63B2A999F44002119AA /* TanKinLianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanKinLianView.swift; sourceTree = "<group>"; };
 		AF17E4DD2A998B1000E93382 /* Presidential Elections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Presidential Elections.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF17E4E02A998B1000E93382 /* Presidential_ElectionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presidential_ElectionsApp.swift; sourceTree = "<group>"; };
 		AF17E4E22A998B1000E93382 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				AF17E4E02A998B1000E93382 /* Presidential_ElectionsApp.swift */,
 				AF17E4E22A998B1000E93382 /* ContentView.swift */,
 				AA94D1AD2A9995350001C034 /* TharmanView.swift */,
+				AAAFD63B2A999F44002119AA /* TanKinLianView.swift */,
 				AF592DB42A998D63007C2EA0 /* CandidatesManager.swift */,
 				AF592DB22A998CCF007C2EA0 /* CandidateDetailView.swift */,
 				AF17E4EE2A998B3900E93382 /* Candidate.swift */,
@@ -155,6 +158,7 @@
 				AF17E4EF2A998B3900E93382 /* Candidate.swift in Sources */,
 				AF17E4F12A998B8A00E93382 /* Candidate+SampleData.swift in Sources */,
 				AA94D1AE2A9995350001C034 /* TharmanView.swift in Sources */,
+				AAAFD63C2A999F44002119AA /* TanKinLianView.swift in Sources */,
 				AF17E4E32A998B1000E93382 /* ContentView.swift in Sources */,
 				AF592DB52A998D63007C2EA0 /* CandidatesManager.swift in Sources */,
 				AF592DB32A998CCF007C2EA0 /* CandidateDetailView.swift in Sources */,
