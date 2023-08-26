@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var candidateManager = CandidateManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List($candidateManager.candidates) { $candidate in
+                NavigationLink {
+                    CandidateDetailView(candidate: $candidate)
+                } label: {
+                    HStack {
+                        Text(candidate.name)
+                        Spacer()
+                        Text("\(candidate.votes)")
+                    }
+                }
+            }
+            .navigationTitle("Candidates 2023")
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        candidateManager.candidates = Candidate.sampleCandidates
+                    } label: {
+                        Label("Load sample data", systemImage: "clipboard")
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
