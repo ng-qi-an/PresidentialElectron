@@ -13,24 +13,45 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List($candidateManager.candidates) { $candidate in
-                NavigationLink {
-                    CandidateDetailView(candidate: $candidate)
-                } label: {
-                    HStack {
-                        Text(candidate.name)
-                        Spacer()
-                        Text("\(candidate.votes)")
+            VStack {
+                List($candidateManager.candidates, editActions: [.all]) { $candidate in
+                    NavigationLink {
+                        CandidateDetailView(candidate: $candidate)
+                    } label: {
+                        HStack {
+                            Text(candidate.name)
+                            Spacer()
+                            Text("\(candidate.votes)")
+                        }
                     }
                 }
+                Spacer()
             }
-            .navigationTitle("Candidates 2023")
+            .navigationTitle("Election 2023")
             .toolbar {
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
                 ToolbarItem {
                     Button {
                         candidateManager.candidates = Candidate.sampleCandidates
                     } label: {
                         Label("Load sample data", systemImage: "clipboard")
+                    }
+                }
+                ToolbarItem {
+                    Button {
+                        
+                    } label: {
+                        Label("Add person?", systemImage: "plus")
+                    }
+                }
+                ToolbarItem(placement: .bottomBar) {
+                    Button{
+                                        
+                    } label: {
+                        Text("See Vote Summary")
                     }
                 }
             }

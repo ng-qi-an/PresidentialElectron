@@ -10,9 +10,9 @@ import Foundation
 extension Candidate {
     
     static let sampleCandidates = [
-        Candidate(name: "Tan King Lian", age: 60, numberOfCats: 0, amountOfHair: 0.9),
-        Candidate(name: "Ng King Song", age: 50, numberOfCats: 1, amountOfHair: 0.7),
-        Candidate(name: "Tharcat", age: 55, numberOfCats: 3, amountOfHair: 0.1)
+        Candidate(name: "Nail Nik Nat", age: 75, hobby: "Taking many pictures", children: 3, race: "Chinese", spouse: "Gnoh Weis Yat", spouseAge: 67, spouseRace: "Chinese"),
+        Candidate(name: "Gnos Kok Gn", age: 75, hobby: "Making money", children: 3, race: "Chinese", spouse: "Ual Libys", spouseAge: 45, spouseRace: "Canadian-Chinese"),
+        Candidate(name: "Namraht", age: 66, hobby: "Going overseas??", children: 4, race: "Indian", spouse: "Igotti Okimuy Enaj", spouseAge: 0, spouseRace: "")
     ]
     
 }
