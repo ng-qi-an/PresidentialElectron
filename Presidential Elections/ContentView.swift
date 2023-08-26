@@ -29,7 +29,6 @@ struct ContentView: View {
             }
             .navigationTitle("Election 2023")
             .toolbar {
-                
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
